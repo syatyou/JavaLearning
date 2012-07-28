@@ -4,11 +4,16 @@ public class Ran {
 	
 	public static void main(String[] args) {
 		
-		//Randomクラスのインスタンス化
-		Random rnd = new Random();
+		Random random = new Random();
 		
-		int ran = rnd.nextInt(100) + 1;
-		System.out.println("もっと小さいです");
-	}　　　
-
+		int ran = random.nextInt(100) + 1;
+		System.out.println(ran);
+		
+		
+		if (ran >= 50) {
+		  System.out.println("もっと小さいです");
+		} else {
+		  System.out.println("もっと大きいです");
+	}
+	}
 }
